@@ -24,7 +24,7 @@ export default class ServicosDePagamentoEConsulta {
     if (valor > 100.0) {
       categoria = "Cara";
     } else {
-      let categoria = "Padrão";
+        categoria = "Padrão";
     }
 
     this.#servicos.push({
@@ -38,10 +38,3 @@ export default class ServicosDePagamentoEConsulta {
     return this.#servicos.at(-1);
   }
 }
-
-/*const servicosDePagamentoEConsulta = new ServicosDePagamentoEConsulta();
-
-servicosDePagamentoEConsulta.servico("0987-7656-3475","Samar", 156.87,"Conta");
-servicosDePagamentoEConsulta.servico("2937-7823-3512","Solar", 80.56, "Padrão");
-
-console.log(servicosDePagamentoEConsulta.consultarUltimoPagamento());/*
